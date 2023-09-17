@@ -1,9 +1,9 @@
 function testThis(username: string): string {
     console.log(username);
-    const user = { name: "test",
+    const user = { nae: "test",
                                                                                                                                                                                                                 age: 12,
     };
-    const name = user["name"];
+    const name = user["nae"];
 
     return username + name;
 }
