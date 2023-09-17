@@ -7,9 +7,9 @@
         "dev": "node ./src/server.js",
         "format:check": "prettier . --check",
         "format:fix": "prettier . --write",
-        "lint": "eslint .",
         "lint:fix": "eslint . --fix",
-        "prepare": "cd .. && husky install"
+        "lint": "eslint .",
+        "prepare": "husky install"
     },
     "author": "",
     "license": "ISC",
