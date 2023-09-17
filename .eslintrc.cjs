@@ -13,6 +13,7 @@ module.exports = {
     },
     root: true,
     rules: {
-        "no-console": "warn",
+        "no-console": "error",
+        "dot-notation": "error",
     }
 };
