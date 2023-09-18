@@ -1,4 +1,3 @@
-function testThis(username: string): string {
-    return username;
-}
-testThis("test2");
+import { Config } from "./config";
+
+console.log("PORT:", Config.PORT);

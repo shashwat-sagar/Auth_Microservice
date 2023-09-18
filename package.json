@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "node ./src/server.js",
+        "dev": "node dist/server.js",
         "format:check": "prettier . --check",
         "format:fix": "prettier . --write",
         "lint:fix": "eslint . --fix",
@@ -29,5 +29,8 @@
             "npm run lint:fix",
             "npm run format:fix"
         ]
+    },
+    "dependencies": {
+        "dotenv": "^16.3.1"
     }
 }
