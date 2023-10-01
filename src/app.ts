@@ -1,14 +1,12 @@
 import express, { NextFunction, Request, Response } from "express";
 
-import createError, { HttpError } from "http-errors";
+import { HttpError } from "http-errors";
 import logger from "./config/logger";
 
 const app = express();
 
-app.get("/", async (req, res, next) => {
-    const err = createError(401, "you are not allowed to access this page");
-    return next(err);
-    // res.send("Welcome to Auth Services");
+app.get("/", async (req, res) => {
+    res.send("welcome to auth service");
 });
 
 // global error handler
