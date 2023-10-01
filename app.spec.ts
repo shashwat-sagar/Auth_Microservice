@@ -12,4 +12,5 @@ describe("App", () => {
         const response = await request(app).get("/").send();
         expect(response.statusCode).toBe(200);
     });
+    it("should test", () => {});
 });
