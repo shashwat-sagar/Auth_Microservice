@@ -1,13 +1,15 @@
 import express, { NextFunction, Request, Response } from "express";
-
 import { HttpError } from "http-errors";
 import logger from "./config/logger";
+import authRouter from "./routes/auth";
 
 const app = express();
 
 app.get("/", async (req, res) => {
     res.status(200).send("welcome to auth services from shashwat");
 });
+
+app.use("/auth", authRouter);
 
 // global error handler
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
