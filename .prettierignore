@@ -3,3 +3,5 @@ build
 coverage
 dist
 .eslintrc.cjs
+tsconfig.json
+package*.json
