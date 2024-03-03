@@ -5,6 +5,7 @@ import authRouter from "./routes/auth";
 import "reflect-metadata";
 
 const app = express();
+app.use(express.json());
 
 app.get("/", async (req, res) => {
     res.status(200).send("welcome to auth services from shashwat");
