@@ -2,6 +2,7 @@ import { Repository } from "typeorm";
 
 import { User } from "../entity/User";
 import { UserData } from "../types";
+import { Roles } from "../contants";
 
 export class UserService {
     constructor(private userRepository: Repository<User>) {}
@@ -12,6 +13,7 @@ export class UserService {
             lastName,
             email,
             password,
+            role: Roles.CUSTOMER,
         });
     }
     async getDetails() {
